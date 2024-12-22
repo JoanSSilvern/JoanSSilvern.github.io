@@ -1,9 +1,131 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Silvern - Front-End Developer</title>
+    <style>
+        /* Color and Typography */
+        :root {
+            --lilac-purple: #b692d3;
+            --cream-tone: #f9f5e6;
+            --mexican-pink: #e63946;
+            --text-color: #4a4a4a;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: var(--cream-tone);
+            color: var(--text-color);
+        }
+        header {
+            background: var(--lilac-purple);
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        header p {
+            font-size: 1.4em;
+            font-style: italic;
+        }
+        nav {
+            background: var(--mexican-pink);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            color: var(--lilac-purple);
+            font-size: 2em;
+            border-bottom: 2px solid var(--mexican-pink);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            background: var(--lilac-purple);
+            color: white;
+            padding: 10px;
+        }
+        /* Contact Form */
+        form {
+            background: white;
+            padding: 20px;
+            border: 1px solid var(--lilac-purple);
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        form button {
+            background: var(--mexican-pink);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: var(--lilac-purple);
+        }
+    </style>
+</head>
 <body>
-  <h1>Joan Silvern </h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>Joan Silvern</h1>
+        <p>Front-End Developer | Graphic Designer</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#diversity">Diversity Awareness</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Joan Silvern, a creative and passionate front-end developer with a background in graphic design. I bring a unique blend of creativity and technical skills to every project, creating designs that are as functional as they are beautiful. My past experiences as a flight attendant and nanny have shaped my perspective and ability to connect with diverse audiences.</p>
+    </section>
+    <section id="diversity">
+        <h2>Diversity Awareness</h2>
+        <p>As someone with a varied professional background and a deep appreciation for inclusivity, I prioritize creating digital experiences that resonate with diverse audiences. My goal is to bring awareness and accessibility to the forefront of every project, ensuring every design is welcoming and equitable for all users.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Joan Silvern. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
